@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webfabrik | Искусственный интеллект</title>
+
+    <link rel="icon" type="image/x-icon" href="img/webfabrik_favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Google Analytics 4 — замените G-XXXXXXXXXX на ваш Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+    <header>
+        <div class="menu-wrapper">
+            <button id="mobile-nav-trigger" type="button"
+                    aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+            </button>
+
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Webfabrik"></a>
+            </div>
+
+            <nav class="menu" id="main-menu" aria-label="Главное меню">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li>
+                        <a href="services.html" class="arrow">Услуги</a>
+                        <ul class="sub-menu">
+                            <li><a href="landing.html">Лэндинг</a></li>
+                            <li><a href="corporate.html">Корпоративный сайт</a></li>
+                            <li><a href="online-shop.html">Интернет-магазин</a></li>
+                            <li><a href="mobile-app.html">Мобильное приложение</a></li>
+                            <li><a href="seo.html">Оптимизация и продвижение</a></li>
+                            <li><a href="portal.html">Индивидуальный портал</a></li>
+                            <li><a href="ai.html">Искусственный интеллект</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="contacts">
+                <span>/</span>
+                <span><a href="mailto:office@webfabrik.ru" class="email">office@webfabrik.ru</a></span>
+                <span><a href="tel:+79060581818" class="tel">+7 (906) 058-18-18</a></span>
+                <span><a href="contacts.html" class="contact-button">Связаться</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="service-single">
+            <div class="honeycomb1" aria-hidden="true"></div>
+            <div class="honeycomb2" aria-hidden="true"></div>
+            <div class="honeycomb3" aria-hidden="true"></div>
+
+            <div class="service-info page-content">
+                <div class="service-title">
+                    <img src="img/ai.png" alt="Искусственный интеллект">
+                    <h1>Искусственный интеллект</h1>
+                </div>
+
+                <p>Бывают ситуации, в которых обычный мозг уже не справляется — и тогда на помощь приходит искусственный интеллект.</p>
+
+                <div class="advantages-wrapper">
+                    <ul class="advantage-list">
+                        <li>Сложные алгоритмы</li>
+                        <li>Обучаемость</li>
+                        <li>Работа с большим количеством данных</li>
+                    </ul>
+
+                    <ul class="advantage-list">
+                        <li>Анализ данных</li>
+                        <li>Обработка данных</li>
+                        <li>Принятие решения на основании входящих данных</li>
+                    </ul>
+                </div>
+
+                <a href="#apply" class="order">Получить расчёт</a>
+            </div>
+
+            <div class="slides">
+                <img src="img/slide4.png" class="slide4" alt="">
+                <img src="img/slide5.png" class="slide5" alt="">
+            </div>
+        </section>
+
+        <section class="service-text">
+            <div class="page-content">
+                <p>
+                    Наша команда специалистов реализует любой проект на основе искусственного интеллекта.
+                    Наш искусственный интеллект постоянно растёт, развивается и проходит обновления.
+                    Он успешно решает поставленные задачи, но при этом имеет свой собственный характер.
+                </p>
+            </div>
+        </section>
+
+        <section class="apply" id="apply">
+            <div class="page-content">
+                <div class="apply-wrapper">
+                    <div class="apply-desc">
+                        <h2>Получите расчёт<br>на проект с искусственным интеллектом</h2>
+                        <p>
+                            Рассчитаем персонализированно под ваш проект —<br>
+                            смету, сроки и 2–3 кейса с цифрами за 24 часа.<br>
+                            Без навязчивых звонков и обязательств.
+                        </p>
+                    </div>
+
+                    <!-- TODO: укажите реальный endpoint в action -->
+                    <form class="apply-form" action="/send.php" method="post">
+                        <label class="visually-hidden" for="field-name">Имя</label>
+                        <input type="text" id="field-name" name="name"
+                               placeholder="Имя" autocomplete="name" required><br>
+
+                        <label class="visually-hidden" for="field-email">E-mail</label>
+                        <input type="email" id="field-email" name="email"
+                               placeholder="E-mail" autocomplete="email" required><br>
+
+                        <label class="visually-hidden" for="field-phone">Номер телефона</label>
+                        <input type="tel" id="field-phone" name="phone"
+                               placeholder="Номер телефона" autocomplete="tel" required><br>
+
+                        <input type="submit" value="Получить расчёт">
+                        <p class="form-note">
+                            Нажимая «Получить расчёт», вы соглашаетесь на обработку персональных данных.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="page-content">
+            <img src="img/vector.png" alt="" loading="lazy">
+            <p>
+                <b>webfabrik.ru</b> — более 14 лет создаём сайты, системы автоматизации и программное<br>
+                обеспечение для Вас и Вашего бизнеса — на<br>
+                самых передовых и надёжных технологиях!
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

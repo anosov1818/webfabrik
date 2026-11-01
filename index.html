@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webfabrik — сайты, интернет-магазины и приложения, которые приносят прибыль</title>
+
+    <link rel="icon" type="image/x-icon" href="img/webfabrik_favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Google Analytics 4 — замените G-XXXXXXXXXX на ваш Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+    <header>
+        <div class="menu-wrapper">
+            <button id="mobile-nav-trigger" type="button"
+                    aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+            </button>
+
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Webfabrik"></a>
+            </div>
+
+            <nav class="menu" id="main-menu" aria-label="Главное меню">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li>
+                        <a href="services.html" class="arrow">Услуги</a>
+                        <ul class="sub-menu">
+                            <li><a href="landing.html">Лэндинг</a></li>
+                            <li><a href="corporate.html">Корпоративный сайт</a></li>
+                            <li><a href="online-shop.html">Интернет-магазин</a></li>
+                            <li><a href="mobile-app.html">Мобильное приложение</a></li>
+                            <li><a href="seo.html">Оптимизация и продвижение</a></li>
+                            <li><a href="portal.html">Индивидуальный портал</a></li>
+                            <li><a href="ai.html">Искусственный интеллект</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="contacts">
+                <span>/</span>
+                <span><a href="mailto:office@webfabrik.ru" class="email">office@webfabrik.ru</a></span>
+                <span><a href="tel:+79060581818" class="tel">+7 (906) 058-18-18</a></span>
+                <span><a href="contacts.html" class="contact-button">Связаться</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <h1 class="visually-hidden">
+            Webfabrik — сайты, интернет-магазины и приложения, которые приносят прибыль
+        </h1>
+
+        <!-- =================== СЛАЙДЕР =================== -->
+        <section class="slider" aria-label="Промо">
+            <div class="honeycomb1" aria-hidden="true"></div>
+            <div class="honeycomb2" aria-hidden="true"></div>
+            <div class="honeycomb3" aria-hidden="true"></div>
+
+            <div class="slider-info">
+                <div class="dots" id="dots">
+                    <button class="dot" id="dot1" type="button" aria-label="Слайд 1"></button>
+                    <button class="dot" id="dot2" type="button" aria-label="Слайд 2"></button>
+                    <button class="dot" id="dot3" type="button" aria-label="Слайд 3"></button>
+                </div>
+
+                <div class="slider-texts">
+                    <div class="slider-text-block is-active">
+                        <h2 class="slider-title">
+                            Нужен современный сайт?
+                        </h2>
+                        <p class="slider-text">
+                            Мы создаём одностраничные сайты-визитки, корпоративные сайты,<br>
+                            сайты-каталоги, интернет-магазины, а также реализуем Ваши эксклюзивные<br>
+                            проекты с уникальным дизайном — строго по Вашим требованиям,<br>
+                            на новейших, проверенных и надёжных технологиях.
+                        </p>
+                    </div>
+
+                    <div class="slider-text-block">
+                        <h2 class="slider-title">
+                            „Если Вашего бизнеса нет в Интернете,<br>
+                            то Вас нет в бизнесе!“
+                        </h2>
+                        <p class="slider-text"><i>Билл Гейтс</i></p>
+                    </div>
+
+                    <div class="slider-text-block">
+                        <h2 class="slider-title">
+                            Разработка приложений на заказ
+                        </h2>
+                        <p class="slider-text">
+                            Только у нас Вы сможете заказать профессиональную разработку приложений,<br>
+                            порталов, чат-ботов, маркетплейсов, систем управления и автоматизации,<br>
+                            программного обеспечения по Вашему уникальному проекту — и даже<br>
+                            искусственного интеллекта.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#apply" class="order">Получить расчёт</a>
+            </div>
+
+            <div class="slides">
+                <img src="img/slide1.png" id="slide1" class="slide1" alt="">
+                <img src="img/slide2.png" id="slide2" class="slide2" alt="" loading="lazy">
+                <img src="img/slide3.png" id="slide3" class="slide3" alt="" loading="lazy">
+            </div>
+        </section>
+
+        <!-- =================== УСЛУГИ =================== -->
+        <section class="services" aria-labelledby="services-title">
+            <div class="bg-star1" aria-hidden="true"></div>
+            <div class="honeycomb4" aria-hidden="true"></div>
+            <div class="honeycomb5" aria-hidden="true"></div>
+
+            <div class="page-content">
+                <h2 class="title white" id="services-title">/ Услуги</h2>
+
+                <div class="services-wrapper">
+                    <a href="landing.html"     class="service-big landing"><h3>Лэндинг</h3></a>
+                    <a href="corporate.html"   class="service-big corporate"><h3>Корпоративный сайт</h3></a>
+                    <a href="online-shop.html" class="service-big online-shop"><h3>Интернет-магазин</h3></a>
+
+                    <a href="mobile-app.html" class="service-small mobile-app"><h3>Мобильное<br>приложение</h3></a>
+                    <a href="seo.html"        class="service-small seo"><h3>Оптимизация и<br>продвижение</h3></a>
+                    <a href="portal.html"     class="service-small portal"><h3>Индивидуальный<br>портал</h3></a>
+                    <a href="ai.html"         class="service-small ai"><h3>Искусственный<br>интеллект</h3></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== ПОРТФОЛИО =================== -->
+        <section class="portfolio" aria-labelledby="portfolio-title">
+            <div class="bg-star2" aria-hidden="true"></div>
+            <div class="honeycomb6"  aria-hidden="true"></div>
+            <div class="honeycomb7"  aria-hidden="true"></div>
+            <div class="honeycomb8"  aria-hidden="true"></div>
+            <div class="honeycomb9"  aria-hidden="true"></div>
+            <div class="honeycomb10" aria-hidden="true"></div>
+
+            <div class="page-content">
+                <h2 class="title white" id="portfolio-title">/ Портфолио</h2>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image preysalexander"></div>
+                    <div class="portfolio-desc">
+                        <h3>imperia-chasov.ru</h3>
+                        <p>Интернет-магазин наручных часов</p>
+                        <div class="small-block">
+                            <h4>Сложность проекта</h4>
+                            <div class="stars">
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="inactive-star"></div>
+                                <div class="inactive-star"></div>
+                            </div>
+                        </div>
+                        <div class="small-block">
+                            <h4>Срок разработки</h4>
+                            <p>От 14 дней</p>
+                        </div>
+                        <div class="big-block">
+                            <h4>Стоимость похожего проекта</h4>
+                            <p>От 70 000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-desc">
+                        <h3>blumen-land.at</h3>
+                        <p>Онлайн-магазин цветов с доставкой</p>
+                        <div class="small-block">
+                            <h4>Сложность проекта</h4>
+                            <div class="stars">
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="inactive-star"></div>
+                                <div class="inactive-star"></div>
+                            </div>
+                        </div>
+                        <div class="small-block">
+                            <h4>Срок разработки</h4>
+                            <p>От 14 дней</p>
+                        </div>
+                        <div class="big-block">
+                            <h4>Стоимость похожего проекта</h4>
+                            <p>От 70 000 ₽</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-image blumen-land"></div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image deskaisersmedizin"></div>
+                    <div class="portfolio-desc">
+                        <h3>deskaisersmedizin.com</h3>
+                        <p>Видеопортал: покупка и просмотр онлайн-курсов</p>
+                        <div class="small-block">
+                            <h4>Сложность проекта</h4>
+                            <div class="stars">
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="inactive-star"></div>
+                            </div>
+                        </div>
+                        <div class="small-block">
+                            <h4>Срок разработки</h4>
+                            <p>От 30 дней</p>
+                        </div>
+                        <div class="big-block">
+                            <h4>Стоимость похожего проекта</h4>
+                            <p>От 130 000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-desc">
+                        <h3>rubberik.at</h3>
+                        <p>Интернет-магазин одежды и обуви из латекса</p>
+                        <div class="small-block">
+                            <h4>Сложность проекта</h4>
+                            <div class="stars">
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="inactive-star"></div>
+                                <div class="inactive-star"></div>
+                            </div>
+                        </div>
+                        <div class="small-block">
+                            <h4>Срок разработки</h4>
+                            <p>От 14 дней</p>
+                        </div>
+                        <div class="big-block">
+                            <h4>Стоимость похожего проекта</h4>
+                            <p>От 90 000 ₽</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-image rubberik"></div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image agropalitra"></div>
+                    <div class="portfolio-desc">
+                        <h3>agropalitra.ru</h3>
+                        <p>Интернет-магазин товаров для сада и огорода</p>
+                        <div class="small-block">
+                            <h4>Сложность проекта</h4>
+                            <div class="stars">
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="active-star"></div>
+                                <div class="inactive-star"></div>
+                                <div class="inactive-star"></div>
+                            </div>
+                        </div>
+                        <div class="small-block">
+                            <h4>Срок разработки</h4>
+                            <p>От 14 дней</p>
+                        </div>
+                        <div class="big-block">
+                            <h4>Стоимость похожего проекта</h4>
+                            <p>От 70 000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== ОТЗЫВЫ =================== -->
+        <section class="reviews" aria-labelledby="reviews-title">
+            <div class="page-content">
+                <h2 class="title black" id="reviews-title">/ Отзывы клиентов</h2>
+                <div class="review-wrapper">
+                    <div class="review">
+                        <p>Сотрудничаем много лет. Оперативно реагируют на запросы, ни разу не подвели. Менеджер всегда на связи — надёжный партнёр.</p>
+                        <div>
+                            <p>Пайвина Елена Николаевна</p>
+                            <p>Агропалитра</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>Выбор пал на WebFabrik — и это было лучшее решение. Ребята учли все пожелания и предложили решения, о которых мы даже не думали. Спасибо команде!</p>
+                        <div>
+                            <p>Дементьева Светлана Александровна</p>
+                            <p>Империя Часов</p>
+                        </div>
+                    </div>
+                    <!-- TODO: заменить на реальный отзыв -->
+                    <div class="review">
+                        <p>Заказывали редизайн корпоративного сайта. Уложились в срок и бюджет. Заявок с сайта стало вдвое больше уже в первый месяц.</p>
+                        <div>
+                            <p>Иван Петров</p>
+                            <p>Global Finance Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== ФОРМА ЗАЯВКИ =================== -->
+        <section class="apply relative" id="apply" aria-labelledby="apply-title">
+            <div class="honeycomb11" aria-hidden="true"></div>
+            <div class="honeycomb12" aria-hidden="true"></div>
+
+            <div class="page-content">
+                <div class="apply-wrapper">
+                    <div class="apply-desc">
+                        <h2 id="apply-title">
+                            Получите расчёт<br>
+                            на ваш новый сайт
+                        </h2>
+                        <p>
+                            Рассчитаем персонализированно под ваш проект —<br>
+                            смету, сроки и 2–3 кейса с цифрами за 24 часа.<br>
+                            Без навязчивых звонков и обязательств.
+                        </p>
+                    </div>
+
+                    <!-- TODO: укажите реальный endpoint в action -->
+                    <form class="apply-form" action="/send.php" method="post">
+                        <label class="visually-hidden" for="field-name">Имя</label>
+                        <input type="text" id="field-name" name="name"
+                               placeholder="Имя" autocomplete="name" required><br>
+
+                        <label class="visually-hidden" for="field-email">E-mail</label>
+                        <input type="email" id="field-email" name="email"
+                               placeholder="E-mail" autocomplete="email" required><br>
+
+                        <label class="visually-hidden" for="field-phone">Номер телефона</label>
+                        <input type="tel" id="field-phone" name="phone"
+                               placeholder="Номер телефона" autocomplete="tel" required><br>
+
+                        <input type="submit" value="Получить расчёт">
+                        <p class="form-note">
+                            Нажимая «Получить расчёт», вы соглашаетесь на обработку персональных данных.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== РАЗРАБОТКА =================== -->
+        <section class="dev" aria-labelledby="dev-title">
+            <div class="honeycomb13" aria-hidden="true"></div>
+            <div class="honeycomb14" aria-hidden="true"></div>
+
+            <div class="page-content">
+                <h2 class="title white" id="dev-title">/ Разработка</h2>
+
+                <div class="apps-desc">
+                    <h2>Программное обеспечение</h2>
+                    <p>Разработка по Вашим индивидуальным требованиям:</p>
+                </div>
+
+                <div class="apps-wrapper">
+                    <a href="mobile-app.html" class="app">Приложений и порталов</a>
+                    <a href="portal.html"     class="app">Систем автоматизации бизнеса и производства</a>
+                    <a href="portal.html"     class="app">Систем биллингации</a>
+                    <a href="ai.html"         class="app">Внедрение искусственного интеллекта</a>
+
+                    <a href="portfolio.html" class="order">Узнать больше</a>
+                </div>
+
+                <div class="apps-footer">
+                    <div>
+                        <p>Наши специалисты спроектируют и разработают приложение любой сложности — индивидуально под Ваш запрос. Начиная с создания концепта, процесс разработки делится на несколько важных этапов: каждый тщательно обдумывается, оговаривается и утверждается.</p>
+                    </div>
+                    <div>
+                        <p>После выбора стека технологий (а мы выбираем только самые современные, но в то же время проверенные и надёжные!) наши специалисты начинают создавать Ваше программное обеспечение. Оно проходит многократное тестирование и отладку — и только после этого мы передаём его Вам, убедившись в отсутствии ошибок и багов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== О КОМПАНИИ =================== -->
+        <section class="about" aria-labelledby="about-title">
+            <div class="page-content">
+                <h2 class="title white" id="about-title">/ О компании</h2>
+
+                <div class="advantages">
+                    <div class="advantage">
+                        <p>около</p>
+                        <p>120</p>
+                        <p>созданных и успешно<br>запущенных сайтов</p>
+                    </div>
+                    <div class="advantage">
+                        <p>более</p>
+                        <p>14</p>
+                        <p>лет опыта<br>в разработке</p>
+                    </div>
+                    <div class="advantage">
+                        <p>более</p>
+                        <p>$1 000 000</p>
+                        <p>доходы клиентов благодаря<br>онлайн-продажам:)</p>
+                    </div>
+                </div>
+
+                <p class="about-text">
+                    <b>webfabrik.ru</b> — мы создаём лучшие сайты, системы автоматизации и программное<br>
+                    обеспечение для Вас и Вашего бизнеса — на<br>
+                    самых передовых и надёжных технологиях!
+                </p>
+            </div>
+        </section>
+
+        <!-- =================== КОМАНДА =================== -->
+        <section class="team" aria-labelledby="team-title">
+            <div class="honeycomb15" aria-hidden="true"></div>
+            <div class="honeycomb16" aria-hidden="true"></div>
+            <div class="honeycomb17" aria-hidden="true"></div>
+
+            <div class="page-content">
+                <h2 class="title white" id="team-title">/ Команда</h2>
+
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="img/dmitry_anosov.png" alt="Дмитрий Аносов" loading="lazy">
+                        <h3>Дмитрий Аносов</h3>
+                        <p>Главный разработчик,<br>основатель WebFabrik</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/da.png" alt="Мария Кравчук" loading="lazy">
+                        <h3>Мария Кравчук</h3>
+                        <p>Менеджер проектов</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/ip.png" alt="Ингрид Пахмутова" loading="lazy">
+                        <h3>Ингрид Пахмутова</h3>
+                        <p>Графический дизайнер</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/da.png" alt="Федосеев Александр" loading="lazy">
+                        <h3>Федосеев Александр</h3>
+                        <p>Бэк-энд разработчик</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/ilya_perzhebinski.png" alt="Илья Пержебинский" loading="lazy">
+                        <h3>Илья Пержебинский</h3>
+                        <p>Бэк-энд разработчик</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="page-content">
+            <img src="img/vector.png" alt="" loading="lazy">
+            <p>
+                <b>webfabrik.ru</b> — более 14 лет создаём сайты, системы автоматизации и программное<br>
+                обеспечение для Вас и Вашего бизнеса — на<br>
+                самых передовых и надёжных технологиях!
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
