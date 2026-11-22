@@ -1,5 +1,13 @@
 /**
- * slider.js — слайдер «большой / средний / маленький» с кликабельными точками.
+ * slider.js — слайдер «большой / средний / маленький».
+ *
+ * Позиционирование полностью в CSS (классы .is-big / .is-medium / .is-small).
+ * JS только переключает классы. Никаких inline-стилей.
+ *
+ * Порядок подобран так, чтобы совпадал с оригиналом:
+ *   positions[0] = big  (35%, -13%, 14%)
+ *   positions[1] = SMALL (15%, 35%, -5%)
+ *   positions[2] = MEDIUM (24%, 25%, 43%)
  */
 
 class Slider {
@@ -9,11 +17,7 @@ class Slider {
         this.fadeMs     = options.fadeMs     ?? 350;
         this.step       = 0;
 
-        this.positions = [
-            { width: 35, right: -13, top: 14 },
-            { width: 15, right: 35,  top: -5 },
-            { width: 24, right: 25,  top: 43 },
-        ];
+        this.roles = ['is-big', 'is-small', 'is-medium'];
 
         this.slides = Array.from({ length: this.total },
             (_, i) => document.getElementById('slide' + (i + 1)));
@@ -70,19 +74,23 @@ class Slider {
     }
 
     applySlides(step) {
-        const big = (3 - step) % this.total;
+        // Кто «большой» на этом шаге
+        const bigIndex = (3 - step) % this.total;
+
+        // Порядок как в оригинале: [big, small, medium]
+        // → slide[bigIndex]       получает is-big
+        // → slide[(big+2)%N]      получает is-small
+        // → slide[(big+1)%N]      получает is-medium
         const order = [
-            big,
-            (big + this.total - 1) % this.total,
-            (big + 1) % this.total,
+            bigIndex,
+            (bigIndex + 2) % this.total,  // small
+            (bigIndex + 1) % this.total,  // medium
         ];
 
-        order.forEach((slideIndex, posIndex) => {
-            const pos = this.positions[posIndex];
-            const el  = this.slides[slideIndex];
-            el.style.right = pos.right + '%';
-            el.style.top   = pos.top   + '%';
-            el.style.width = pos.width + '%';
+        order.forEach((slideIndex, roleIndex) => {
+            const el = this.slides[slideIndex];
+            el.classList.remove('is-big', 'is-medium', 'is-small');
+            el.classList.add(this.roles[roleIndex]);
         });
     }
 
